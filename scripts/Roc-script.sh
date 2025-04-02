@@ -1,6 +1,6 @@
 # 修改默认IP & 固件名称
-sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
-sed -i "s/hostname='.*'/hostname='Roc'/g" package/base-files/files/bin/config_generate
+sed -i 's/192.168.2.1/192.168.1.1/g' package/base-files/files/bin/config_generate
+sed -i "s/hostname='Roc'/hostname='Lonnie'/g" package/base-files/files/bin/config_generate
 
 # 移除要替换的包
 rm -rf feeds/packages/net/alist
